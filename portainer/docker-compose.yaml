@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - /Users/denver/projects/docker-course/mini-node-postgres-app-volume:/docker-entrypoint-initdb.d
+      - /Users/xyz/xyz/xyz/mini-node-postgres-app-volume:/docker-entrypoint-initdb.d # Change this to absolute path
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
       interval: 5s
